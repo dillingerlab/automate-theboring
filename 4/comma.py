@@ -1,16 +1,19 @@
 def collatz(number):
     if number % 2 == 0:
         return number // 2
-    else:
-        return (number * 3) + 1
-try:
-    item = input("Enter a number")
-    print(int(number))
-    new_number = collatz(int(number))
-    print(new_number)
-    while new_number != 1:
-        new_number = collatz(new_number)
-        print(new_number)
-except ValueError:
-    print("Bad input")
 
+number = input("Enter a number")
+list = [number]
+print(list)
+status = True
+while status == True:
+    number2 = input("Enter a number")
+    list.append(number2)
+    user_input = input("Do you want to add another number (Y/N)?")
+    print(user_input)
+    if user_input == 'Y':
+        counter = True
+    else:
+        counter = False
+        break
+print(list)

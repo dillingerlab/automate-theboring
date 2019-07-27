@@ -8,6 +8,8 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
-
-def rotate(grid):
-    
+for x in range(0, (len(grid[0]))):
+    output = ''
+    for y in range(0, (len(grid))):
+        output += grid[y][x]
+    print(output)
